@@ -1,4 +1,4 @@
-FROM amazoncorretto:alpine:3.14
+FROM amazoncorretto:alpine-3.14
 
 COPY target/demo-0.0.1-SNAPSHOT.jar /var/lib/service.jar
 
