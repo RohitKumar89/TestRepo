@@ -24,7 +24,7 @@ pipeline {
         stage('Build & Push Docker Image') {
 			steps{
 				script {
-					dockerImage = docker.build 'rohitchhonker/testRepo:v1'
+					dockerImage = docker.build 'rohitchhonker/testrepo:v1'
 					docker.withRegistry('', dockhubCredential) {
       					dockerImage.push("v1")
 				 	}    
