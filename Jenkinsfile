@@ -1,5 +1,5 @@
 pipeline {
-	agent any
+	agent EC2
 	
 	stages {
 		stage('Build') {
